@@ -1,0 +1,5 @@
+body{font-family:system-ui,sans-serif;margin:0;background:#faf7f2;color:#2a211b}header,main,footer{max-width:960px;margin:auto;padding:16px}
+a{color:#7a4a12}h1{margin:.2em 0}.tag{display:inline-block;background:#efe3cf;border-radius:10px;padding:2px 8px;font-size:12px;margin:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}.card{background:#fff;border:1px solid #e3d5bd;border-radius:12px;padding:14px}
+.todo{color:#a33;font-weight:600}input,select,textarea{font:inherit;padding:8px;border:1px solid #cbb;border-radius:8px}nav a{margin-right:14px}
+.box{background:#fff3df;border:1px solid #e3c79a;border-radius:12px;padding:14px;margin:16px 0}dt{font-weight:700;margin-top:10px}
