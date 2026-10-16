@@ -1,0 +1,303 @@
+[
+ {
+  "slug": "nightly-daily-ledger",
+  "title": "Nightly daily ledger",
+  "category": "Ops",
+  "shop": "Behind the scenes of our shop and channels",
+  "job": "When one person runs a shop, a channel and a dozen sites, small promises slip. Each night around 8:30 PM CT, Grok Bot checks that what the owner asked for that day actually got done, and lists anything missed or waiting.",
+  "tools": [
+   "Grok Bot",
+   "X",
+   "GitHub",
+   "Shopify"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner reads the list and decides each item. Grok Bot doesn't change, post or reply to anything.",
+  "results": "Caught a comic post that missed its scheduled 3:24 PM time, and a subscription renewal date nobody had written down (Oct 14).",
+  "broke": "Grok Bot couldn't read the day's chat log, so it rebuilt the list from its own notes and the day's check-ins. A search for a receipt in email came back empty.",
+  "verified": false,
+  "card_num": "Missed",
+  "card_line": "a comic post time and a renewal date. A nightly Grok Bot lists what slipped."
+ },
+ {
+  "slug": "grokme-catalog-monitor",
+  "title": "Website watch for our small sites",
+  "category": "Research",
+  "shop": "Our websites",
+  "job": "The owner runs dozens of small websites on grok.me, where Grok Bot users host small sites. Grok Bot checks that the owner's sites are up and listed in the public directory, and spots copies and look-alike names.",
+  "tools": [
+   "Grok Bot",
+   "X search",
+   "the grok.me directory"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "Problems go to the owner's main Grok Bot, which tells the owner. Anything sent to the public directory waits for the owner's OK.",
+  "results": "Mapped about 7,930 public grok.me sites (7,816 of them from the directory). All 83 of the owner's sites were up, but only 21 of the 83 were listed in the directory.",
+  "broke": "Two lookup methods returned nothing useful, so they were dropped from the routine.",
+  "verified": false,
+  "card_num": "83",
+  "card_line": "of the owner's sites checked. All 83 were up; only 21 were listed in the public directory."
+ },
+ {
+  "slug": "subdomain-audit",
+  "title": "Which sites move first",
+  "category": "Sites",
+  "shop": "Our websites",
+  "job": "The owner wanted some sites on their own web address, but didn't know which to move first. Grok Bot checked each of the owner's sites and ranked them.",
+  "tools": [
+   "Grok Bot"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "It only looked. It changed no web addresses. The owner picks which sites move.",
+  "results": "Of 83 sites, 3 showed playable previews on X, only 4 of 17 'game' pages were real, and 1 was visible to Google when it shouldn't be. Picked 9 sites to move first.",
+  "broke": "Many pages said 'OK' but were actually blank or missing, so the quick check was misleading. The brief said 82 sites; the real list had 83.",
+  "verified": false,
+  "card_num": "9",
+  "card_line": "sites picked to move first, after a Grok Bot checked what every page really shows."
+ },
+ {
+  "slug": "merch-design-research",
+  "title": "Merch design research",
+  "category": "Shop",
+  "shop": "Shopify + Printful shop",
+  "job": "Before designing new shirts, our shop wanted to see what similar brands actually sell. Grok Bot read their public product pages and wrote notes on style, layout, type, color and humor, with links and prices.",
+  "tools": [
+   "Grok Bot",
+   "web reading"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner approves everything before it goes live.",
+  "results": "Research doc for the shop's merch line, dated Oct 13, 2026. Sales impact: TODO.",
+  "broke": "Tesla's shop blocked it, Patagonia showed a waiting page, and Threadless showed nothing it could read. Two other stores had no product list. Each was written down and skipped.",
+  "verified": false,
+  "card_num": "Notes",
+  "card_line": "on comparable shops, with what it could not read written down too."
+ },
+ {
+  "slug": "collection-arranger",
+  "title": "Shop collection arranger",
+  "category": "Shop",
+  "shop": "Shopify + Printful shop",
+  "job": "Our shirt shop's Wear page was sorted by best sellers, so each design's tee and tank ended up far apart. Grok Bot reorders the page by hand, grouped by design, and logs each move.",
+  "tools": [
+   "Grok Bot",
+   "Shopify"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner approves everything before it goes live.",
+  "results": "Changed the Wear page from 'best selling' order to a hand-picked order, grouped by design, on Oct 15 (41 changes logged). Sales effect: TODO.",
+  "broke": "TODO",
+  "verified": false,
+  "card_num": "41",
+  "card_line": "changes logged while a Grok Bot reordered a shop collection by design."
+ },
+ {
+  "slug": "support-inbox-assistant",
+  "title": "Product support inbox assistant + chatbot plan",
+  "category": "Support",
+  "shop": "Shopify + Printful shop",
+  "job": "Customer questions take time a solo owner doesn't have. Grok Bot drafts replies to customer emails, and the owner sends them. A planned store chat would answer order status, shipping times, sizing and returns, and pass everything else to email.",
+  "tools": [
+   "Grok Bot",
+   "Shopify Inbox",
+   "Printful"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner approves everything before it goes live.",
+  "results": "Store chat: planned, not built (the plan is to use Shopify Inbox's free plan). Inbox results: TODO.",
+  "broke": "TODO",
+  "verified": false,
+  "card_num": "Planned",
+  "card_line": "Grok Bot drafts replies to customer emails. The owner sends them."
+ },
+ {
+  "slug": "shorts-video-pipeline",
+  "title": "Weekly shorts video pipeline",
+  "category": "Content",
+  "shop": "Creator channels",
+  "job": "Our creator channels post short videos every day. Grok Bot makes a week of them: a still image per short, then 6 second talking clips of the channel's cartoon characters.",
+  "tools": [
+   "Grok Bot",
+   "Grok Imagine image",
+   "Grok Imagine video"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "Owner approves scripts before posting.",
+  "results": "Seven shorts for the week of Oct 11, with 21 animated clips logged. Views: TODO.",
+  "broke": "One spend log left out the animation clips, so it showed $12.70 instead of $41.79. On day 8 of a story week, the video-joining step crashed after the clips were made.",
+  "verified": false,
+  "unit_costs": [
+   {
+    "item": "Each 6 second talking clip",
+    "amount": "$0.87 per shot",
+    "basis": "actual",
+    "source": "cost log"
+   },
+   {
+    "item": "Each 10 second animated clip",
+    "amount": "$1.41 per clip",
+    "basis": "actual",
+    "source": "cost log"
+   },
+   {
+    "item": "One week of shorts (Oct 11)",
+    "amount": "$41.79 actual, plus about $0.49 for the still images (estimated)",
+    "basis": "actual + estimate",
+    "source": "cost log"
+   },
+   {
+    "item": "Story videos (Oct 11 week)",
+    "amount": "about $2.26 a day (days 3 to 8; day 2 has no cost log)",
+    "basis": "actual",
+    "source": "story video cost logs"
+   }
+  ],
+  "card_num": "$0.87",
+  "card_line": "per 6 second talking clip, actual. A Grok Bot makes a week of shorts."
+ },
+ {
+  "slug": "x-ads-spend-board",
+  "title": "Daily X ads report",
+  "category": "Ops",
+  "shop": "Creator channels",
+  "job": "The owner runs small ads on X and needs to know each day whether to keep them. Grok Bot reports what the ads spent, how many people saw them, the clicks paid for, and whether each ad is on.",
+  "tools": [
+   "Grok Bot",
+   "X Ads"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner decides to pause or keep each ad. Grok Bot only reports.",
+  "results": "Ad spend tracked from the live X Ads account: $9.97 (Oct 12), $6.66 (Oct 13), $9.98 (Oct 14). One ad campaign paused, one still running.",
+  "broke": "TODO",
+  "verified": false,
+  "unit_costs": [
+   {
+    "item": "X data-access credits used",
+    "amount": "about $3.18 over 5 days (balance $20.94 on Oct 10, $17.76 on Oct 15)",
+    "basis": "actual",
+    "source": "the X account balance, read daily"
+   }
+  ],
+  "card_num": "$3.18",
+  "card_line": "of X data-access credits used over 5 days, actual. A daily report tracks ad spend."
+ },
+ {
+  "slug": "milliways-shop-co-owner",
+  "title": "Milliways, the shop co-owner bot",
+  "category": "Shop",
+  "shop": "Shopify + Printful shop",
+  "job": "Running a shirt shop alone means the photos, descriptions and menus never end. Milliways, a Grok Bot, runs the day-to-day store work: product photos, mockups, alt text, collections and menus. It also scans for product ideas.",
+  "tools": [
+   "Grok Bot",
+   "Shopify",
+   "Printful",
+   "email",
+   "Grok Bot image tools"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner approves everything before it goes live. For example, it logged: waiting for the owner to approve the new layout, nothing changed yet.",
+  "results": "From the shop change logs (Oct 15): 71 lifestyle mockups added, 4 collections created, and a custom-word shirt page with its own collection and menu link. Mockup repairs, photo cleanup and the Wear sort are listed as their own builds. The logs don't say which of the owner's Grok Bots made each change.",
+  "broke": "Some tank mockups showed the wrong model and were replaced. Front and back shots used different models, so matching backs were made. One upload was refused because of a typo in a setting. The second try worked.",
+  "verified": false,
+  "unit_costs": [
+   {
+    "item": "Printed inside-neck label add-on (Printful)",
+    "amount": "about $2.49 more per shirt",
+    "basis": "actual",
+    "source": "Printful price list, noted Oct 12"
+   }
+  ],
+  "card_num": "71",
+  "card_line": "lifestyle photos added to a print-on-demand shop. Nothing goes live without the owner."
+ },
+ {
+  "slug": "stock-tracking-guard",
+  "title": "Stock tracking guard",
+  "category": "Shop",
+  "shop": "Shopify + Printful shop",
+  "job": "Runs daily at 6:41 AM CT and turns Shopify inventory tracking back off on print-on-demand items so they don't show as sold out.",
+  "tools": [
+   "Grok Bot",
+   "Shopify connector"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner approves everything before it goes live.",
+  "results": "Runs daily at 6:41 AM CT. Each morning it switches stock tracking back off after Printful turns it on. Fixes per run: not logged.",
+  "broke": "Printful syncs kept turning Shopify inventory tracking back on, so made-to-order items looked sold out. The guard was added to undo that each morning.",
+  "verified": false,
+  "card_num": "6:41",
+  "card_line": "every morning a Grok Bot undoes the sync that made made-to-order shirts look sold out."
+ },
+ {
+  "slug": "mockup-fixer",
+  "title": "Mockup fixer",
+  "category": "Shop",
+  "shop": "Shopify + Printful shop",
+  "job": "A wrong mockup shows buyers a shirt that won't match what arrives. Grok Bot checks each product photo against the real print file. Where a generated mockup redrew the print or cut off its text, it places the real print file onto the photo and uploads the fix.",
+  "tools": [
+   "Grok Bot",
+   "Shopify",
+   "Printful"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner approves the rebuilt images before they replace the old ones.",
+  "results": "73 apparel photos checked; 13 rebuilt or matched and uploaded; 4 white shots of the Light Cone shirt made; 16 print files redrawn with a bigger '* = 69' line (1.8 times larger), 8 of them live in Printful across 4 products.",
+  "broke": "Generated mockups redrew the prints and cut off the text. Fixed by placing the real print files instead of generating again.",
+  "proof": "https://shop.thebookof42.com",
+  "verified": false,
+  "card_num": "13",
+  "card_line": "product photos showed the wrong design. A Grok Bot rebuilt them from the real print files."
+ },
+ {
+  "slug": "theme-migrator",
+  "title": "Theme migrator",
+  "category": "Shop",
+  "shop": "Shopify + Printful shop",
+  "job": "Switching a store's design can quietly break pages buyers need. Before our shop moved to a new Shopify design (Horizon), Grok Bot compared every page, old against new.",
+  "tools": [
+   "Grok Bot",
+   "Shopify"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner reviews the comparison and approves the switch.",
+  "results": "12 kinds of page checked. It caught a missing custom-word shirt page, a missing footer, and things that got harder to use with a screen reader, all fixed before going live on Oct 15.",
+  "broke": "The switch lost the custom-word shirt page, so buyers could have ordered without typing their word. The comparison caught it and the page was rebuilt.",
+  "proof": "https://shop.thebookof42.com",
+  "verified": false,
+  "card_num": "12",
+  "card_line": "page types compared before the new store design went live. It caught a dropped template."
+ },
+ {
+  "slug": "photo-cleanup",
+  "title": "Product photo cleanup",
+  "category": "Shop",
+  "shop": "Shopify + Printful shop",
+  "job": "Plain white mockups from the print partner looked cheap next to the shop's dark brand, and some colors showed the wrong picture. Grok Bot removes extra plain white photos, makes each size and color show the right picture, and fixes alt text.",
+  "tools": [
+   "Grok Bot",
+   "Shopify",
+   "Printful"
+  ],
+  "cost": "TODO",
+  "setup": "TODO",
+  "review": "The owner spot-checks product pages after each batch.",
+  "results": "34 white Printful photos removed, 154 size and color options pointed to the right photo, 60 alt texts fixed, plus 3 more white back shots and 2 white Light Cone shirt photos removed on Oct 15.",
+  "broke": "TODO",
+  "proof": "https://shop.thebookof42.com",
+  "verified": false,
+  "card_num": "154",
+  "card_line": "product variants pointed back to the right photos, plus 60 alt texts fixed."
+ }
+]
