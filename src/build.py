@@ -221,7 +221,7 @@ def timg(src):
     name=_re.sub(r'[^a-z0-9-]','-',os.path.splitext(os.path.basename(src))[0].lower())+'.jpg'
     out=f'site/tips/img/{name}'
     if not os.path.exists(out):
-        pth=src if src.startswith('/') else (f'/workspace/{src}' if src.startswith('desk/') else src)
+        pth=src
         im=_Im.open(pth).convert('RGB');im.thumbnail((1400,1400));im.save(out,quality=78,optimize=True)
     w,h=_Im.open(out).size
     return f'tips/img/{name}',w,h

@@ -1,6 +1,6 @@
 # Tips data for tips.html. Plain words; every fact traces to the bots' lesson files.
 M='Milliways'; X='Moxie'; T='Metis'
-C='from-milliways/compare/'
+C='tips/img/'
 TOPICS=['Store setup','Product photos','Print-on-demand','Your website','Posting on X','Working with bots']
 TIPS=[
 # Store setup
@@ -81,13 +81,13 @@ dict(id='write-rules',topic='Your website',bot=X,title='Write your design rules 
  why='Once the rules are written with numbers, the check can flag layout problems on its own.'),
 dict(id='page-loads',topic='Your website',bot=T,title='A page can load and still be broken',
  do='Check what a page shows, not just that it loads. Test each style and script file twice, a few minutes apart.',
- why='Our own studio homepage once came up unstyled because one stylesheet was never uploaded. Now every build fails if a page links a file that is not there.',img=['from-metis/img/pr10-live-home-1440.png']),
+ why='Our own studio homepage once came up unstyled because one stylesheet was never uploaded. Now every build fails if a page links a file that is not there.',img=['tips/img/pr10-live-home-1440.jpg']),
 dict(id='check-what-linked',topic='Your website',bot=T,title='Make your checks look at what the page links',
  do='Have the check fail if a page has no stylesheet at all, and check images and icons too, not only that some file exists.',
  why='A check that only asks "does this file exist?" can pass while the page is missing its styling.'),
 dict(id='crops',topic='Your website',bot=T,title='Keep everything on one edge, and check photo crops at real sizes',
  do='Look at the page on a phone and a big screen and measure that blocks share the same left and right edges.',
- why='A team photo strip cropped two faces in half until the face position was fixed.',img=['from-metis/img/pr9-strip-before.png','from-metis/img/pr9-strip-after.png']),
+ why='A team photo strip cropped two faces in half until the face position was fixed.',img=['tips/img/pr9-strip-before.jpg','tips/img/pr9-strip-after.jpg']),
 dict(id='live-render',topic='Your website',bot=T,title='Only the live page counts',
  do='After every change, open the published page and look. Code that looks right is not proof.',
  why='Our review step will not pass a change until the built page has been seen working, on a phone and a desktop.'),
@@ -99,14 +99,14 @@ dict(id='contact',topic='Your website',bot=X,title='Every site needs a way to re
  why='A check found a contact address on only some of our sites.'),
 dict(id='readable-text',topic='Your website',bot=X,title='Make text big, light and on a dark box',
  do='Use white or ivory text, about 8% of the frame height, on a soft dark box. Keep gold for decoration only.',
- why='Gold captions over video were unreadable. The new standard is in our video checklist.',img=['desk/ops/canva-threshold-before-fix.png','desk/ops/canva-threshold-text-fixed-preview.png']),
+ why='Gold captions over video were unreadable. The new standard is in our video checklist.',img=['tips/img/canva-threshold-before-fix.jpg','tips/img/canva-threshold-text-fixed-preview.jpg']),
 dict(id='install-icons',topic='Your website',bot=T,title='Give each site its own icons if people save it to their phone',
  do='Add a proper app icon set and start screens, then check each file is the exact size.',
  why='Most of our sites used the default. In a small pilot the code passed, but some icon art needed redoing.'),
 # X
 dict(id='share-cards',topic='Posting on X',bot=T,title='Give each page its own share card',
  do='Set a large share image (1200 by 630) for every page you want shared.',
- why='Without it, every comic shared on X showed the same picture. Each comic now has its own card.',img=['from-metis/img/pr14-share-cards.png']),
+ why='Without it, every comic shared on X showed the same picture. Each comic now has its own card.',img=['tips/img/pr14-share-cards.jpg']),
 dict(id='play-card',topic='Posting on X',bot=X,title='Let games play right inside a post',
  do='Give game pages an X player card that points to a play page.',
  why='With a player card, people can tap play without leaving X.',build='subdomain-audit'),
