@@ -186,7 +186,7 @@ learned=f"""<p class="eyebrow cap">What we learned</p><h1 class=hero>What We Lea
 <dl class=key><dt>Light Cone ad, campaign pffe1</dt><dd>{t('$36.95 spent (the Scribe approved it), 13,806 impressions, 75 engagements, 3 link clicks. The click-through rate was 0.02%, 3 clicks out of 13,806 impressions.')}</dd>
 <dt>Plain product ad</dt><dd>{t('Zero engagements.')}</dd>
 <dt>Story version</dt><dd>{t('The most attention of the three.')}</dd>
-<dt>{t("Don't Panic boost, campaign pga0b")}</dt><dd>{t('$22.29 spent, 5,181 impressions, 615 engagements. The Scribe approved the Don\'t Panic boost, then paused it early.')}</dd>
+<dt>{t("Don't Panic boost, campaign pga0b")}</dt><dd>{t('$22.29 spent, 5,181 impressions, 615 engagements.')}</dd>
 <dt>Ad spend</dt><dd>{t('This week: $59.24. To date: $59.24.')}</dd>
 <dt>The shop</dt><dd>{t('224 store sessions. Orders: 1 ($32.95), the Scribe\'s own test order, placed to make sure checkout and printing actually work. Orders from strangers: 0.')}</dd>
 <dt>Sources</dt><dd>{t('X Ads campaigns pffe1 (Light Cone) and pga0b (Don\'t Panic), from October 10, 2026 at midnight through October 17, 2026 at midnight, Central Time. Store sessions and orders are from Shopify for October 10 to October 16.')}</dd></dl></section>
@@ -395,7 +395,7 @@ figure.duo img+img{margin-top:0}
 .comic img{display:block;width:100%;height:auto;border:1px solid var(--ink);background:#f6f3ec}
 .motion{position:relative}
 .motion video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;opacity:0;pointer-events:none}
-@media (prefers-reduced-motion: no-preference){.motion.is-on video{opacity:1}}
+.motion.is-on video{opacity:1}
 .comic .mctrl{margin:var(--s2) 0 0}
 .comic button.motion-toggle{font-size:18px}
 .scribe{grid-column:1/-1;justify-self:stretch;width:auto;margin-top:var(--s6);text-align:left}
