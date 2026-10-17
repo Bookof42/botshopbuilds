@@ -114,6 +114,11 @@ figure.duo img+img{margin-top:0}
 .lay-stack figure{margin-top:var(--s4)}
 .comic{grid-column:1/-1;margin:var(--s2) 0 var(--s5);padding:var(--s4) 0;border-top:1px solid var(--ink)}
 .comic img{display:block;width:100%;height:auto;border:1px solid var(--ink);background:#f6f3ec}
+.motion{position:relative}
+.motion video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;opacity:0;pointer-events:none}
+@media (prefers-reduced-motion: no-preference){.motion.is-on video{opacity:1}}
+.comic .mctrl{margin:var(--s2) 0 0}
+.comic button.motion-toggle{font-size:18px}
 .scribe{grid-column:1/-1;justify-self:stretch;width:auto;margin-top:var(--s6);text-align:left}
 .scribe h2{font-size:clamp(1.8rem,3vw,2.5rem);margin:var(--s2) 0 var(--s3)}
 .scribe .lead{font-size:1.15em}
