@@ -143,7 +143,7 @@ for e in E:
     rows=[('The job',e['job']),('Tools',', '.join(e['tools'])),('Cost',e['cost'] if not UC else '\n'.join(f"{x['item']}: {x['amount']}{'' if 'actual' in x['amount'] else ' (actual)'}. Source: {x['source']}" for x in UC)+'\nTotal running cost: TODO')]+[('Setup time',e['setup']),('Review needed',e['review']),('Actual results',e['results']),('What broke',e['broke'])]
     dl=''.join(f"<dt class=cap{' id=costs' if k=='Cost' else ''}>{k}</dt><dd>{val(x)}</dd>" for k,x in rows if not (k=='What broke' and x.strip().upper().startswith('TODO')))+(f"<dt class=cap>Proof</dt><dd><a href='{e['proof']}' rel=noopener>See the live shop</a> <span class=data>(uses Printful for print-on-demand)</span></dd>" if e.get('proof') else '')
     dl=dl.replace(chr(10),'<br>')
-    dl=re.sub(r'(https://[^\s<&]+)', lambda m: f'<a href="{m.group(1)}" rel=noopener>{m.group(1)}</a>', dl)
+    dl=re.sub(r'(?<![\'"=])(https://[^\s<&\'"]+)', lambda m: f'<a href="{m.group(1)}" rel=noopener>{m.group(1)}</a>', dl)
     status="Cost, setup and results matched to records." if e.get('verified') else "No field on this page has been checked against a record yet."
     open(f"site/builds/{e['slug']}.html",'w').write(page(tcase(e['title']),f"""<p class=crumb><a class=cap href='../index.html'>All builds</a><span class=cap>{e['category']}</span></p><h1 class=btitle>{t(tcase(e['title']))}</h1><dl class="table sub">{dl}</dl><aside class=side aria-label="Build status"><dl><dt class=cap>Status</dt><dd>{badge(e)}</dd><dd class=data>{status}</dd></dl><dl><dt class=cap>Shop</dt><dd>{t(e['shop'])}</dd></dl><div><p class=cap>Run something like this?</p><p class=data>Send the job, the cost and what broke.</p><p class=cta><a class=contact href='mailto:moxie+botshopbuilds@mail.grokbot.com?subject=Build'>Contact us</a></p></div></aside>""",'../',pth=f"builds/{e['slug']}.html",card='build-'+e['slug'],desc=html.escape(curly(first(e['job']) or e['job']))))
     CARDS.append(('build-'+e['slug'],'Build · '+e['category'],tcase(e['title']),first(e['job']) or e['job'],(lambda c:c.replace('(estimate from list price)','(estimate)').replace('(actual API usage)','(actual)').replace('(Shopify Inbox, price checked Oct 13)','(Shopify Inbox)'))(('' if e['cost'].startswith('Per item') else 'Cost: ')+(first(e['cost']) or e['cost']).replace('TODO','pending')) if not e['cost'].upper().startswith('TODO') else (('Cost: '+e['unit_costs'][0]['amount'].split(' (')[0]+' (actual)' if e.get('unit_costs') else 'Cost: pending'))))
@@ -290,7 +290,7 @@ CHECKS=[
 ]),
 ('Accessibility (WCAG)',[
  ('','WCAG, the Web Content Accessibility Guidelines, asks for enough contrast between the words and what sits behind them. Pale gold on a bright video failed that for us.'),
- ('canon','Words follow one written style. For example: curly quotes and apostrophes, no long dashes, and text big enough to read. Body text should be at least 16 pixels.'),
+ ('canon','Words follow one written style. For example: curly quotes and apostrophes, no long dashes, and text big enough to read. Body text should be at least 18 pixels.'),
  ('','Alt text says what the photo shows. For example, "black tee, front view," not "Product mockup."'),
 ]),
 ('Speed',[
@@ -317,7 +317,7 @@ def check_html():
     for title,items in CHECKS:
         h+=f'<details><summary>{t(title)}</summary><div class=body>'
         for kind,text in items:
-            credit=' <span class=from>— the constellation-control canon</span>' if kind=='canon' else ''
+            credit=' <span class=from>(from the constellation-control canon)</span>' if kind=='canon' else ''
             h+=f'<p>{t(text)}{credit}</p>'
         h+=f'<p class=verdict>Finish this section with PASS, REPAIR, or HOLD.</p></div></details>'
     h+=f'</div><p class=downloads><a class="bk" href="checklist.md" download>Download Markdown</a><a class="bk ghost" href="checklist.txt" download>Download plain text</a></p><p class=data>Free. Nothing on this page is paid.</p></section>'
@@ -328,7 +328,7 @@ def check_plain(md=False):
         lines.append(('## ' if md else '')+title)
         lines.append('')
         for kind,text in items:
-            credit=' — the constellation-control canon' if kind=='canon' else ''
+            credit=' (from the constellation-control canon)' if kind=='canon' else ''
             lines.append(('- ' if md else '')+curly(text)+credit)
             lines.append('')
         lines.append('Finish this section with PASS, REPAIR, or HOLD.')

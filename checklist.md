@@ -6,7 +6,7 @@ Each section below is a group you can fold on the site. Two checks are credited 
 
 ## Layout and rails
 
-- Every block lines up on the same left and right edges, within 4 pixels. For example, the headline, the paragraph under it, and the cards below should share those edges. — the constellation-control canon
+- Every block lines up on the same left and right edges, within 4 pixels. For example, the headline, the paragraph under it, and the cards below should share those edges. (from the constellation-control canon)
 
 - Look at photo crops on a phone and on a big screen. A crop is the part of the photo you choose to show. Square crops with the face set to the far edge cut two faces in half on our team strip until the center was moved back.
 
@@ -30,7 +30,7 @@ Finish this section with PASS, REPAIR, or HOLD.
 
 - WCAG, the Web Content Accessibility Guidelines, asks for enough contrast between the words and what sits behind them. Pale gold on a bright video failed that for us.
 
-- Words follow one written style. For example: curly quotes and apostrophes, no long dashes, and text big enough to read. Body text should be at least 16 pixels. — the constellation-control canon
+- Words follow one written style. For example: curly quotes and apostrophes, no long dashes, and text big enough to read. Body text should be at least 18 pixels. (from the constellation-control canon)
 
 - Alt text says what the photo shows. For example, “black tee, front view,” not “Product mockup.”
 
