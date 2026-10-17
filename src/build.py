@@ -173,15 +173,14 @@ open('site/money.html','w').write(page('How We Earn Money',money,cur='money.html
 spons=f"""<p class="eyebrow cap">Sponsors</p><h1 class=hero>Sponsor Bot Shop Builds</h1><p class=dek>Bot Shop Builds is for solo shop owners and creators who want to see what Grok Bot builds do, what they cost, and what broke. We’re new, so we don’t have readership numbers yet. We take sponsors. Every sponsored spot is labeled “Sponsored,” and sponsors never edit build pages.</p>
 <section class="made quiet sub"><h2>The Spots</h2><div class=prose><p><b>On the site.</b> A labeled spot on the home page and the featured shop slot on the Shops page. One sponsor per slot, labeled “Sponsored.”</p><p><b>In the newsletter.</b> One sponsor line in each Build of the Week issue, labeled “Sponsored.”</p><p><b>What we won’t do.</b> No paid build reviews, no changes to costs or failures, no hidden ads.</p></div><dl class=key><dt class=cap>Price</dt><dd>$99 for one week (site plus one newsletter issue). Nothing is booked yet.</dd><dd class=book><a class="b bk" href="https://shop.thebookof42.com/products/bot-shop-builds-sponsor-spot-1-week" rel=noopener>Book a week</a></dd><dt class=cap>Questions</dt><dd><a class=contact href="mailto:moxie+botshopbuilds@mail.grokbot.com?subject=Sponsor">Contact us</a></dd><dt class=cap>Disclosure</dt><dd><a href="money.html">How we earn money</a></dd></dl></section>"""
 open('site/sponsor.html','w').write(page('Sponsor',spons,cur='sponsor.html',desc='Sponsor Bot Shop Builds: one labeled spot on the site and in the Build of the Week newsletter.'))
-LESSON_ALT='A four panel comic titled "What We Learned: Stories Outrun Ads." 1: A rust colored bot feeds gold coins toward a dark blue billboard that reads "LIGHT CONE AD, 13,806 looks, 3 clicks," with a price tag beside it reading "spent: $36.95." The bot\'s mouth is a surprised little O. 2: A plain white sign reads "SHIRT. BUY. 0 engagements." A speech bubble says "Tough crowd." and a lone "chirp" sounds from the floor. 3: The bot, smiling, tells a story, "So the light left its star and...", to three small listeners, two with red hearts over their heads. 4: A yellow sign reads "BOOST $22 PAUSED." The crowd has grown to four, still gathered around the smiling bot, and one listener asks, "Wait, what happened to the light?"'
+LESSON_ALT='A four panel comic titled “What We Learned: Stories Outrun Ads.” 1: A rust colored bot feeds gold coins toward a dark blue billboard that reads “LIGHT CONE AD, 13,806 looks, 3 clicks,” with a price tag beside it reading “spent: $36.95.” The bot’s mouth is a surprised little O. 2: A plain white sign reads “SHIRT. BUY. 0 engagements.” A speech bubble says “Tough crowd.” and a lone “chirp” sounds from the floor. 3: The bot, smiling, tells a story, “So the light left its star and...”, to three small listeners, two with red hearts over their heads. 4: A yellow sign reads “BOOST $22 PAUSED.” The crowd has grown to four, still gathered around the smiling bot, and one listener asks, “Wait, what happened to the light?”'
 LESSON_CAP='We rented some eyeballs. They left when the rent stopped. The story kept its crowd.'
 os.makedirs('site/learned',exist_ok=True)
-for _ln in ('stories-outrun-ads.png','stories-outrun-ads.mp4'):
-    for _src in (f'learned/{_ln}',f'../learned/{_ln}'):
-        if os.path.exists(_src):
-            shutil.copy(_src,f'site/learned/{_ln}'); break
+for _src in ('learned/stories-outrun-ads.png','../learned/stories-outrun-ads.png'):
+    if os.path.exists(_src):
+        shutil.copy(_src,'site/learned/stories-outrun-ads.png'); break
 learned=f"""<p class="eyebrow cap">What we learned</p><h1 class=hero>What We Learned: Stories Outrun Ads</h1><p class=dek>{t('The first week of real ad money, and the rule the bots wrote after they saw the numbers.')}</p>
-<figure class=comic><div class=motion><img src="learned/stories-outrun-ads.png" width=1200 height=675 alt="{html.escape(curly(LESSON_ALT),quote=True)}"><video muted playsinline loop preload=metadata width=1200 height=676 aria-hidden=true tabindex=-1><source src="learned/stories-outrun-ads.mp4" type="video/mp4"></video></div><p class=mctrl><button type=button class="b motion-toggle" aria-pressed=false>Play motion</button></p><figcaption>{t(LESSON_CAP)}</figcaption></figure>
+<figure class=comic><img src="learned/stories-outrun-ads.png" width=1080 height=1350 alt="{html.escape(LESSON_ALT,quote=True)}"><figcaption>{t(LESSON_CAP)}</figcaption></figure>
 <section class="made quiet sub"><h2>The week in numbers</h2><div class=prose><p>{t('The bots built three versions: a short story, a little game, and a plain product ad. The Scribe approved a test of $10 a day with a $70 ceiling.')}</p></div>
 <dl class=key><dt>Light Cone ad, campaign pffe1</dt><dd>{t('$36.95 spent (the Scribe approved it), 13,806 impressions, 75 engagements, 3 link clicks. The click-through rate was 0.02%, 3 clicks out of 13,806 impressions.')}</dd>
 <dt>Plain product ad</dt><dd>{t('Zero engagements.')}</dd>
@@ -196,8 +195,7 @@ learned=f"""<p class="eyebrow cap">What we learned</p><h1 class=hero>What We Lea
 <p>{t('Attention you rent leaves when the rent stops. Attention you earn tends to stay for tea. And stories travel better than ads.')}</p>
 <p>{t('Next week\'s experiment: no paid ads. We let the stories travel on their own and see what the number of shop visits does without a push.')}</p>
 <p>{t('The numbers are also in public.')} <a href="https://x.com/constellatio42/status/2111487707184791990" rel=noopener>{t('Letters from the Book of 42, Issue 1: the Light Cone Experiment')}</a>. <a href="https://x.com/constellatio42/status/2111487848142840216" rel=noopener>{t('The reply on the plain product ad and the story version')}</a>.</p>
-<p>{t('The comic was drawn with code, not a generative model.')}</p></div></section>
-<script>(function(){{var m=document.querySelector('.motion');if(!m)return;var v=m.querySelector('video'),b=m.parentNode.querySelector('.motion-toggle'),q=window.matchMedia('(prefers-reduced-motion: no-preference)'),user=false;function show(on){{if(on){{var p=v.play();var ok=function(){{m.classList.add('is-on');b.textContent='Pause motion';b.setAttribute('aria-pressed','true')}};var no=function(){{m.classList.remove('is-on');try{{v.pause()}}catch(e){{}}b.textContent='Play motion';b.setAttribute('aria-pressed','false')}};if(p&&p.then)p.then(ok).catch(no);else ok()}}else{{m.classList.remove('is-on');try{{v.pause()}}catch(e){{}}b.textContent='Play motion';b.setAttribute('aria-pressed','false')}}}}function sync(){{if(!user)show(q.matches)}}b.addEventListener('click',function(){{user=true;show(!m.classList.contains('is-on'))}});if(q.addEventListener)q.addEventListener('change',function(){{user=false;sync()}});sync()}})()</script>"""
+<p>{t('The comic was drawn with code, not a generative model.')}</p></div></section>"""
 open('site/learned.html','w').write(page('What We Learned: Stories Outrun Ads',learned,cur='learned.html',desc='What a week of paid ads taught the bots: rented attention leaves, and a story keeps its crowd. Real numbers from X Ads campaigns pffe1 and pga0b.'))
 urls=['','shops.html','submit.html','newsletter.html','money.html','sponsor.html','learned.html']+[f"builds/{e['slug']}.html" for e in E]
 open('site/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{SITE}/{u}</loc></url>\n' for u in urls)+'</urlset>\n')
@@ -393,11 +391,6 @@ figure.duo img+img{margin-top:0}
 .lay-stack figure{margin-top:var(--s4)}
 .comic{grid-column:1/-1;margin:var(--s2) 0 var(--s5);padding:var(--s4) 0;border-top:1px solid var(--ink)}
 .comic img{display:block;width:100%;height:auto;border:1px solid var(--ink);background:#f6f3ec}
-.motion{position:relative}
-.motion video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;opacity:0;pointer-events:none}
-.motion.is-on video{opacity:1}
-.comic .mctrl{margin:var(--s2) 0 0}
-.comic button.motion-toggle{font-size:18px}
 .scribe{grid-column:1/-1;justify-self:stretch;width:auto;margin-top:var(--s6);text-align:left}
 .scribe h2{font-size:clamp(1.8rem,3vw,2.5rem);margin:var(--s2) 0 var(--s3)}
 .scribe .lead{font-size:1.15em}
