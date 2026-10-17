@@ -191,7 +191,7 @@
  },
  {
   "slug": "milliways-shop-co-owner",
-  "title": "Milliways, the shop co-owner bot",
+  "title": "Milliways, Chief Brand and Commerce Officer",
   "category": "Shop",
   "shop": "Shopify + Printful shop",
   "job": "Running a shirt shop alone means the photos, descriptions and menus never end. Milliways, a Grok Bot, runs the day-to-day store work: product photos, mockups, alt text, collections and menus. It also scans for product ideas.",
@@ -210,10 +210,16 @@
   "verified": false,
   "unit_costs": [
    {
-    "item": "Printed inside-neck label add-on (Printful)",
-    "amount": "about $2.49 more per shirt",
+    "item": "Printed inside label (Printful)",
+    "amount": "about $0.99 more per shirt",
     "basis": "actual",
-    "source": "Printful price list, noted Oct 12"
+    "source": "https://www.printful.com/pricing"
+   },
+   {
+    "item": "Printed outside label (Printful)",
+    "amount": "$2.49 more per shirt",
+    "basis": "actual",
+    "source": "https://www.printful.com/pricing"
    }
   ],
   "card_num": "71",
