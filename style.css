@@ -85,7 +85,7 @@ main>.made:last-child{margin-bottom:var(--s7)}.spons{grid-column:1/-1;margin:var
 .key dd a{display:inline-flex;align-items:center;min-height:48px}.key dd.book{margin-top:var(--s2)}a.bk{display:inline-flex;align-items:center;min-height:48px;padding:0 var(--s3);background:var(--ink);color:#fff;text-decoration:none;font-weight:600}a.bk:hover{background:var(--acc);color:#fff}.key dd a.bk{min-height:48px}
 .why{grid-column:1/-1;justify-self:stretch;width:auto;margin:var(--s4) 0 0;padding:var(--s3) 0 0;border-top:1px solid var(--hair);text-align:left}.why p{max-width:none;margin-top:var(--s1);font-size:1.06em}.tipslot h3 a{color:var(--ink)}.tipslot a{display:inline-flex;align-items:center;min-height:48px}.cta a{display:inline-flex;align-items:center;min-height:48px}.shop h2 a,.shop p.data a,.runs li a,.shop li a{display:inline-flex;align-items:center;min-height:48px}.key dd a.bk{min-height:48px}
 :focus-visible{outline:2px solid var(--acc);outline-offset:2px}::selection{background:#f0d2c6;color:var(--ink)}
-.prose blockquote.pull{margin:var(--s3) 0;padding:var(--s2) 0 var(--s2) var(--s3);border-left:3px solid var(--ink);font-family:'IBM Plex Serif',Georgia,serif;font-size:1.3em}
+.prose blockquote.pull{margin:var(--s3) auto;padding:var(--s2) var(--s3);border:0;border-block:1px solid var(--ink);text-align:center;font-family:'IBM Plex Serif',Georgia,serif;font-size:1.3em;max-width:32ch}
 .prose blockquote.pull p{margin:0}
 
 #tq,#tb,#tn{grid-column:1/-1}#tn{color:var(--mute);font-size:17px;margin:0}
