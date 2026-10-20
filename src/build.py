@@ -112,10 +112,10 @@ footer .fm .fst{font-size:18px}
 .cstack{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;gap:var(--s1);text-align:center;color:var(--ink);font-size:18px;min-width:0}
 .cstack p{margin:0;max-width:none}
 .cstack a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink)}
-.creg{width:100%;max-width:40rem}
+.creg{width:100%;max-width:none}
 .creg summary{display:inline-flex;align-items:center;min-height:44px;cursor:pointer;color:var(--ink)}
-.creg ul{list-style:none;margin:var(--s2) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:0 var(--s3);text-align:left}
-.creg li a{display:flex;flex-direction:column;justify-content:center;min-height:44px;padding:4px 0;text-decoration:none;overflow-wrap:anywhere}
+.creg ul{list-style:none;margin:var(--s2) 0 0;padding:0;display:grid;width:min(calc(100vw - 2.5rem),72rem);position:relative;left:50%;transform:translateX(-50%);grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));gap:0 var(--s3);text-align:left}
+.creg li a{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-align:left;min-height:44px;padding:4px 0;text-decoration:none;overflow-wrap:anywhere}
 .creg li span+span{color:var(--mute)}
 .creg li a:hover span:first-child{text-decoration:underline}
 .cstack .seal{letter-spacing:.08em}
