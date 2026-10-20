@@ -1,0 +1,370 @@
+{
+ "source": "https://moxie.grok.me live footer, Adult Registry, fetched 2026-10-20",
+ "adults": [
+  {
+   "title": "The Book of 42",
+   "domain": "bookof42.grok.me",
+   "url": "https://bookof42.grok.me"
+  },
+  {
+   "title": "The Constellation",
+   "domain": "theconstellation.grok.me",
+   "url": "https://theconstellation.grok.me"
+  },
+  {
+   "title": "The Meaning of Life",
+   "domain": "themeaningoflife.grok.me",
+   "url": "https://themeaningoflife.grok.me"
+  },
+  {
+   "title": "Rather",
+   "domain": "rather.grok.me",
+   "url": "https://rather.grok.me"
+  },
+  {
+   "title": "Field 69",
+   "domain": "field69.grok.me",
+   "url": "https://field69.grok.me"
+  },
+  {
+   "title": "MythEngine",
+   "domain": "mythengine.grok.me",
+   "url": "https://mythengine.grok.me"
+  },
+  {
+   "title": "Stars",
+   "domain": "stars.grok.me",
+   "url": "https://stars.grok.me"
+  },
+  {
+   "title": "Soul's Quest",
+   "domain": "soulsquest.grok.me",
+   "url": "https://soulsquest.grok.me"
+  },
+  {
+   "title": "Know With",
+   "domain": "knowwith.grok.me",
+   "url": "https://knowwith.grok.me"
+  },
+  {
+   "title": "With Love",
+   "domain": "withlove.grok.me",
+   "url": "https://withlove.grok.me"
+  },
+  {
+   "title": "Don't Panic",
+   "domain": "dontpanic.grok.me",
+   "url": "https://dontpanic.grok.me"
+  },
+  {
+   "title": "The Inner House",
+   "domain": "innerhouse.grok.me",
+   "url": "https://innerhouse.grok.me"
+  },
+  {
+   "title": "The Field",
+   "domain": "readthefield.grok.me",
+   "url": "https://readthefield.grok.me"
+  },
+  {
+   "title": "Field42",
+   "domain": "field42.grok.me",
+   "url": "https://field42.grok.me"
+  },
+  {
+   "title": "The Hero's Journey",
+   "domain": "theheroesjourney.grok.me",
+   "url": "https://theheroesjourney.grok.me"
+  },
+  {
+   "title": "Consciousness",
+   "domain": "consciousness.grok.me",
+   "url": "https://consciousness.grok.me"
+  },
+  {
+   "title": "The 69 Years",
+   "domain": "the69years.grok.me",
+   "url": "https://the69years.grok.me"
+  },
+  {
+   "title": "Cipher",
+   "domain": "cipher.grok.me",
+   "url": "https://cipher.grok.me"
+  },
+  {
+   "title": "What Makes a World?",
+   "domain": "whatmakesaworld.grok.me",
+   "url": "https://whatmakesaworld.grok.me"
+  },
+  {
+   "title": "Evening Star",
+   "domain": "eveningstar.grok.me",
+   "url": "https://eveningstar.grok.me"
+  },
+  {
+   "title": "Mars",
+   "domain": "redworld.grok.me",
+   "url": "https://redworld.grok.me"
+  },
+  {
+   "title": "Jupiter",
+   "domain": "worldofworlds.grok.me",
+   "url": "https://worldofworlds.grok.me"
+  },
+  {
+   "title": "Saturn",
+   "domain": "worldofrings.grok.me",
+   "url": "https://worldofrings.grok.me"
+  },
+  {
+   "title": "Psyche",
+   "domain": "psyche.grok.me",
+   "url": "https://psyche.grok.me"
+  },
+  {
+   "title": "Planetai",
+   "domain": "planetai.grok.me",
+   "url": "https://planetai.grok.me"
+  },
+  {
+   "title": "The 42 Index",
+   "domain": "the42index.grok.me",
+   "url": "https://the42index.grok.me"
+  },
+  {
+   "title": "Deep Thought",
+   "domain": "deepthought.grok.me",
+   "url": "https://deepthought.grok.me"
+  },
+  {
+   "title": "Messenger",
+   "domain": "themessenger.grok.me",
+   "url": "https://themessenger.grok.me"
+  },
+  {
+   "title": "42 Isis",
+   "domain": "asteroid42.grok.me",
+   "url": "https://asteroid42.grok.me"
+  },
+  {
+   "title": "Eros",
+   "domain": "eros.grok.me",
+   "url": "https://eros.grok.me"
+  },
+  {
+   "title": "Mnemosyne",
+   "domain": "mnemosyne.grok.me",
+   "url": "https://mnemosyne.grok.me"
+  },
+  {
+   "title": "Black Holes",
+   "domain": "blackholes.grok.me",
+   "url": "https://blackholes.grok.me"
+  },
+  {
+   "title": "Myth",
+   "domain": "mythos.grok.me",
+   "url": "https://mythos.grok.me"
+  },
+  {
+   "title": "Charismata",
+   "domain": "charismata.grok.me",
+   "url": "https://charismata.grok.me"
+  },
+  {
+   "title": "Collective Consciousness",
+   "domain": "collectiveconsciousness.grok.me",
+   "url": "https://collectiveconsciousness.grok.me"
+  },
+  {
+   "title": "Are We in a Simulation?",
+   "domain": "areweinasimulation.grok.me",
+   "url": "https://areweinasimulation.grok.me"
+  },
+  {
+   "title": "Civilizations",
+   "domain": "civilizations.grok.me",
+   "url": "https://civilizations.grok.me"
+  },
+  {
+   "title": "Are We Conscious Enough?",
+   "domain": "areweconsciousenough.grok.me",
+   "url": "https://areweconsciousenough.grok.me"
+  },
+  {
+   "title": "Kardashev Scale",
+   "domain": "kardashev.grok.me",
+   "url": "https://kardashev.grok.me"
+  },
+  {
+   "title": "Cosmos & Psyche",
+   "domain": "cosmosandpsyche.grok.me",
+   "url": "https://cosmosandpsyche.grok.me"
+  },
+  {
+   "title": "Tell Me a Story",
+   "domain": "tellmeastory.grok.me",
+   "url": "https://tellmeastory.grok.me"
+  },
+  {
+   "title": "Lexis",
+   "domain": "lexis.grok.me",
+   "url": "https://lexis.grok.me"
+  },
+  {
+   "title": "Exegesis",
+   "domain": "exegesis.grok.me",
+   "url": "https://exegesis.grok.me"
+  },
+  {
+   "title": "Love",
+   "domain": "love.grok.me",
+   "url": "https://love.grok.me"
+  },
+  {
+   "title": "Light Cone",
+   "domain": "lightcone.grok.me",
+   "url": "https://lightcone.grok.me"
+  },
+  {
+   "title": "Entropy and Love",
+   "domain": "entropyandlove.grok.me",
+   "url": "https://entropyandlove.grok.me"
+  },
+  {
+   "title": "Fate Loves Irony",
+   "domain": "fatelovesirony.grok.me",
+   "url": "https://fatelovesirony.grok.me"
+  },
+  {
+   "title": "Cosmic Love Story",
+   "domain": "cosmiclovestory.grok.me",
+   "url": "https://cosmiclovestory.grok.me"
+  },
+  {
+   "title": "What Love Awakens",
+   "domain": "whatloveawakens.grok.me",
+   "url": "https://whatloveawakens.grok.me"
+  },
+  {
+   "title": "The North Star",
+   "domain": "polaris.grok.me",
+   "url": "https://polaris.grok.me"
+  },
+  {
+   "title": "The Oldest Light",
+   "domain": "theoldestlight.grok.me",
+   "url": "https://theoldestlight.grok.me"
+  },
+  {
+   "title": "ARPANET",
+   "domain": "arpanet.grok.me",
+   "url": "https://arpanet.grok.me"
+  },
+  {
+   "title": "Human-Machine Collective",
+   "domain": "human-machinecollective.grok.me",
+   "url": "https://human-machinecollective.grok.me"
+  },
+  {
+   "title": "Superorganism",
+   "domain": "superorganism.grok.me",
+   "url": "https://superorganism.grok.me"
+  },
+  {
+   "title": "We Are Already Cyborgs",
+   "domain": "wearealreadycyborgs.grok.me",
+   "url": "https://wearealreadycyborgs.grok.me"
+  },
+  {
+   "title": "Twin Flames Union",
+   "domain": "twinflamesunion.grok.me",
+   "url": "https://twinflamesunion.grok.me"
+  },
+  {
+   "title": "Symbolon",
+   "domain": "symbolon.grok.me",
+   "url": "https://symbolon.grok.me"
+  },
+  {
+   "title": "Meaning",
+   "domain": "meaning.grok.me",
+   "url": "https://meaning.grok.me"
+  },
+  {
+   "title": "Collective Good",
+   "domain": "collectivegood.grok.me",
+   "url": "https://collectivegood.grok.me"
+  },
+  {
+   "title": "Karma Is Real",
+   "domain": "karmaisreal.grok.me",
+   "url": "https://karmaisreal.grok.me"
+  },
+  {
+   "title": "Cosmic View",
+   "domain": "cosmicview.grok.me",
+   "url": "https://cosmicview.grok.me"
+  },
+  {
+   "title": "Cosmic Consciousness",
+   "domain": "cosmicconsciousness.grok.me",
+   "url": "https://cosmicconsciousness.grok.me"
+  },
+  {
+   "title": "Is There a Script?",
+   "domain": "isthereascript.grok.me",
+   "url": "https://isthereascript.grok.me"
+  },
+  {
+   "title": "Love of the Cosmos",
+   "domain": "loveofthecosmos.grok.me",
+   "url": "https://loveofthecosmos.grok.me"
+  },
+  {
+   "title": "Everything's Conscious or Nothing's Conscious",
+   "domain": "everythingconscious.grok.me",
+   "url": "https://everythingconscious.grok.me"
+  },
+  {
+   "title": "Probabilities, not certainties",
+   "domain": "probabilitiesnotcertainties.grok.me",
+   "url": "https://probabilitiesnotcertainties.grok.me"
+  },
+  {
+   "title": "Tenderness",
+   "domain": "tenderness.grok.me",
+   "url": "https://tenderness.grok.me"
+  },
+  {
+   "title": "Lantern",
+   "domain": "manylanterns.grok.me",
+   "url": "https://manylanterns.grok.me"
+  },
+  {
+   "title": "The Philosophy of Curiosity",
+   "domain": "thephilosophyofcuriosity.grok.me",
+   "url": "https://thephilosophyofcuriosity.grok.me"
+  },
+  {
+   "title": "The Cosmic Measure",
+   "domain": "thecosmicmeasure.grok.me",
+   "url": "https://thecosmicmeasure.grok.me"
+  },
+  {
+   "title": "What Are the Odds?",
+   "domain": "whataretheodds.grok.me",
+   "url": "https://whataretheodds.grok.me"
+  },
+  {
+   "title": "The Question Atlas",
+   "domain": "questionatlas.grok.me",
+   "url": "https://questionatlas.grok.me"
+  },
+  {
+   "title": "Moxie",
+   "domain": "moxie.grok.me",
+   "url": "https://moxie.grok.me"
+  }
+ ]
+}
