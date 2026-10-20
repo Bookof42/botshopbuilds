@@ -134,3 +134,5 @@ a.bk.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
 a.bk.ghost:hover{background:var(--ink);color:#fff}
 .made .prose.solo{grid-column:1/-1;justify-self:stretch;width:auto;max-width:none}
 
+.prose blockquote.pull{margin:var(--s3) 0;padding:var(--s2) 0 var(--s2) var(--s3);border-left:3px solid var(--ink);font-family:'IBM Plex Serif',Georgia,serif;font-size:1.3em}
+.prose blockquote.pull p{margin:0}
