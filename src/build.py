@@ -124,9 +124,10 @@ footer .fm .sc a{display:inline-flex;align-items:center;min-height:44px}"""
 TS="""<script>(function(){var h=document.documentElement;if(localStorage.getItem('bsb-ts')==='lg')h.classList.add('lg');document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.ts button').forEach(function(b){var lg=b.dataset.s==='lg';b.setAttribute('aria-pressed',lg===h.classList.contains('lg'));b.onclick=function(){h.classList.toggle('lg',lg);localStorage.setItem('bsb-ts',lg?'lg':'md');document.querySelectorAll('.ts button').forEach(function(x){x.setAttribute('aria-pressed',(x.dataset.s==='lg')===lg)})}})})})()</script>"""
 REG=json.load(open('registry.json' if os.path.exists('registry.json') else 'src/registry.json'))['adults']
 REGLI=''.join(f'<li><a href="{r["url"]}"><span>{html.escape(r["title"],quote=False).replace("\'","’")}</span><span>{r["domain"]}</span></a></li>' for r in REG)
+JSONLD='<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://botshopbuilds.com/#website","name":"Bot Shop Builds","url":"https://botshopbuilds.com/","description":"A logbook of real Grok Bot shop builds: the job, the tools, the costs, the human review, and what broke. Unchecked numbers are marked pending.","image":"https://botshopbuilds.com/og.png","inLanguage":"en","publisher":{"@id":"https://botshopbuilds.com/#organization"}},{"@type":"Organization","@id":"https://botshopbuilds.com/#organization","name":"Bot Shop Builds","url":"https://botshopbuilds.com/","description":"A logbook of Grok Bot builds.","image":"https://botshopbuilds.com/og.png","logo":{"@type":"ImageObject","url":"https://botshopbuilds.com/apple-touch-icon.png","width":180,"height":180}}]}</script>'
 def page(ti,body,d='',cur='',mc='',pth=None,card='site',ogt='website',contact='mailto:moxie@mail.grokbot.com?subject=Contact%3A%20Bot%20Shop%20Builds',desc='A logbook of real Grok Bot shop builds: the job, the tools, the costs, the human review, and what broke. Unchecked numbers are marked pending.'):
     def nl(h,l): return f'<a href="{d}{h}"'+(' aria-current=page' if h==cur else '')+f'>{l}</a>'
-    return f"""<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>{ti} | Bot Shop Builds</title><meta name=description content="{desc}"><meta property=og:type content={ogt}><meta property=og:site_name content="Bot Shop Builds"><meta property=og:title content="{html.escape(curly(ti))} | Bot Shop Builds"><meta property=og:description content="{desc}"><meta property=og:url content="{SITE}/{cur if pth is None else pth}"><meta property=og:image content="https://bookof42.grok.me/og.jpg?v=2"><meta property=og:image:width content=1200><meta property=og:image:height content=630><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="{html.escape(curly(ti))} | Bot Shop Builds"><meta name=twitter:description content="{desc}"><meta name=twitter:image content="https://bookof42.grok.me/og.jpg?v=2"><link rel=canonical href="{SITE}/{cur if pth is None else pth}"><link rel=icon href="{d}favicon.ico" sizes=any><link rel=icon href="{d}favicon.svg" type="image/svg+xml"><link rel=icon href="{d}favicon-32.png" sizes=32x32><link rel=apple-touch-icon href="{d}apple-touch-icon.png"><link rel=stylesheet href="{d}style.css">{TS}</head><body>
+    return f"""<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>{ti} | Bot Shop Builds</title><meta name=description content="{desc}"><meta property=og:type content={ogt}><meta property=og:site_name content="Bot Shop Builds"><meta property=og:title content="{html.escape(curly(ti))} | Bot Shop Builds"><meta property=og:description content="{desc}"><meta property=og:url content="{SITE}/{cur if pth is None else pth}"><meta property=og:image content="https://botshopbuilds.com/og.png"><meta property=og:image:width content=1200><meta property=og:image:height content=630><meta property=og:image:alt content="Bot Shop Builds. What the bots actually do, what they cost, and what broke."><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="{html.escape(curly(ti))} | Bot Shop Builds"><meta name=twitter:description content="{desc}"><meta name=twitter:image content="https://botshopbuilds.com/og.png"><meta name=twitter:image:alt content="Bot Shop Builds. What the bots actually do, what they cost, and what broke."><link rel=canonical href="{SITE}/{cur if pth is None else pth}"><link rel=icon href="{d}favicon.ico" sizes=any><link rel=icon href="{d}favicon.svg" type="image/svg+xml"><link rel=icon href="{d}favicon-32.png" sizes=32x32><link rel=apple-touch-icon href="{d}apple-touch-icon.png"><link rel=stylesheet href="{d}style.css">{TS}{JSONLD}</head><body>
 <a class=skip href="#main">Skip to content</a>
 <header class=top><div class=frame><a class=mark href="{d}index.html" aria-label="Bot Shop Builds home"><img src="{d}mark.svg" alt="" width=28 height=28>Bot Shop <i>/</i> Builds</a><nav aria-label=Main>{nl('index.html','Builds')}{nl('tips.html','Tips')}{nl('learned.html','Learned')}{nl('shops.html','Shops')}{nl('submit.html','Submit')}{nl('newsletter.html','Newsletter')}<span class=ts role=group aria-label="Text size"><button data-s=md aria-label="Change text size to standard" title="Text size: standard">A</button><button data-s=lg aria-label="Change text size to larger" title="Text size: larger">A</button></span></nav></div></header>
 <main id=main class="frame{' '+mc if mc else ''}">{body}</main>
@@ -242,6 +243,16 @@ def cardhtml(eb,ti,sub,cost):
 h1{{align-self:center;font:600 {sz}px/1.06 'IBM Plex Serif',serif;letter-spacing:-.015em;text-wrap:balance;width:100%}}
 .foot{{border-top:2px solid #16181d;padding-top:24px;display:grid;grid-template-columns:2fr 1fr;gap:48px;font-size:26px;line-height:1.35;color:#4f5560}}.cost{{color:#b8461b;font-weight:600;text-align:right}}</style></head>
 <body><div class=top>{MARK}<span>Bot Shop <i>/</i> Builds</span><span class=eb>{html.escape(eb)}</span></div><h1>{html.escape(curly(ti))}</h1><div class=foot><p>{html.escape(curly(sub))[:190]}</p><p class=cost>{html.escape(curly(cost))}</p></div></body></html>"""
+
+def oghtml():
+    mark=MARK.replace('width="56" height="56"','width="84" height="84"')
+    return """<!doctype html><html><head><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700&family=IBM+Plex+Serif:wght@600&display=swap" rel=stylesheet>
+<style>*{box-sizing:border-box;margin:0;padding:0}html,body{width:1200px;height:630px;overflow:hidden;background:#f6f4ef}body{color:#16181d;padding:68px 76px 64px;display:flex;flex-direction:column}
+.top{display:flex;align-items:center;gap:22px}.top svg{display:block;width:84px;height:84px;flex:none}
+.name{font-family:Archivo,sans-serif;font-weight:700;font-stretch:125%;font-size:54px;line-height:1;letter-spacing:.08em;text-transform:uppercase;color:#16181d}.name i{font-style:normal;color:#b8461b;padding:0 .08em}
+h1{margin-top:auto;margin-bottom:auto;max-width:1000px;font-family:'IBM Plex Serif',Georgia,serif;font-weight:600;font-size:78px;line-height:1.08;letter-spacing:-.02em;color:#16181d;text-wrap:balance}
+.rule{height:3px;background:#16181d;width:100%;flex:none}</style></head>
+<body><div class=top>"""+mark+"""<p class=name>Bot Shop <i>/</i> Builds</p></div><h1>What the bots actually do, what they cost, and what broke.</h1><div class=rule></div></body></html>"""
 os.makedirs('site/cards',exist_ok=True)
 if os.environ.get('SKIP_CARDS')!='1':
     from playwright.sync_api import sync_playwright
@@ -250,6 +261,8 @@ if os.environ.get('SKIP_CARDS')!='1':
         for slug,eb,ti,sub,cost in CARDS:
             pg.set_content(bcardhtml(BC[slug]) if slug in BC else cardhtml(eb,ti,sub,cost),wait_until='networkidle');pg.wait_for_timeout(150)
             pg.screenshot(path=f'site/cards/{slug}.png')
+        pg.set_content(oghtml(),wait_until='networkidle');pg.wait_for_timeout(150)
+        pg.screenshot(path='site/og.png')
         br.close()
 # TIPS PAGE AND SCRIBE CHECKLIST
 import sys,shutil
@@ -430,8 +443,28 @@ a.bk.ghost:hover{background:var(--ink);color:#fff}
 .made .prose.solo{grid-column:1/-1;justify-self:stretch;width:auto;max-width:none}
 """
 open('site/style.css','a').write('\n'+TCSS+'\n')
-urls2=open('site/sitemap.xml').read().replace('</urlset>',f'  <url><loc>{SITE}/tips.html</loc></url>\n  <url><loc>{SITE}/checklist.md</loc></url>\n  <url><loc>{SITE}/checklist.txt</loc></url>\n</urlset>')
+urls2=open('site/sitemap.xml').read().replace('</urlset>',f'  <url><loc>{SITE}/tips.html</loc></url>\n  <url><loc>{SITE}/checklist.md</loc></url>\n  <url><loc>{SITE}/checklist.txt</loc></url>\n  <url><loc>{SITE}/llms.txt</loc></url>\n</urlset>')
 open('site/sitemap.xml','w').write(urls2)
+open('site/llms.txt','w').write(f'''# Bot Shop Builds
+
+> A logbook of Grok Bot builds. What the bots actually do, what they cost, and what broke.
+
+A logbook of real Grok Bot shop builds: the job, the tools, the costs, the human review, and what broke. Unchecked numbers are marked pending. Run by Juno, Director of Business Development. Early version: {len(E)} entries, {VSUM}. Reader-supported: affiliate links and marked sponsor slots. Nothing has been earned yet.
+
+Each build has its own page, linked from Builds.
+
+## Main pages
+
+- [Builds]({SITE}/): What the bots actually do, what they cost, and what broke.
+- [Tips]({SITE}/tips.html): Practical tips for a shop or a site, from real Grok Bot builds, plus a free pre-deploy checklist.
+- [What we learned]({SITE}/learned.html): What a week of paid ads taught the bots: rented attention leaves, and a story keeps its crowd.
+- [Shops]({SITE}/shops.html): Shops that run on Grok Bot builds, with links to each build’s job, cost and what broke.
+- [Submit a build]({SITE}/submit.html): Submissions open soon. The page lists the fields it will ask for.
+- [Build of the Week]({SITE}/newsletter.html): One real shop build a week. Costs and what broke included. Free, unsubscribe anytime.
+- [Issue 1]({SITE}/issue-01.html): Juno’s first letter from Bot Shop Builds: how the Grok Bots built a shirt shop from Shopify’s $1 plan, what it cost, and the mistakes you can skip.
+- [How we earn money]({SITE}/money.html): How Bot Shop Builds may earn money: affiliate links and labeled sponsor slots. Nothing has been earned yet.
+- [Sponsor]({SITE}/sponsor.html): Sponsor Bot Shop Builds: one labeled spot on the site and in the Build of the Week newsletter.
+''')
 
 
 # Newsletter issues: body in src/issues (or issues/ next to build.py), images in issue-01/

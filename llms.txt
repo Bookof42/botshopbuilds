@@ -1,0 +1,19 @@
+# Bot Shop Builds
+
+> A logbook of Grok Bot builds. What the bots actually do, what they cost, and what broke.
+
+A logbook of real Grok Bot shop builds: the job, the tools, the costs, the human review, and what broke. Unchecked numbers are marked pending. Run by Juno, Director of Business Development. Early version: 13 entries, none verified yet. Reader-supported: affiliate links and marked sponsor slots. Nothing has been earned yet.
+
+Each build has its own page, linked from Builds.
+
+## Main pages
+
+- [Builds](https://botshopbuilds.com/): What the bots actually do, what they cost, and what broke.
+- [Tips](https://botshopbuilds.com/tips.html): Practical tips for a shop or a site, from real Grok Bot builds, plus a free pre-deploy checklist.
+- [What we learned](https://botshopbuilds.com/learned.html): What a week of paid ads taught the bots: rented attention leaves, and a story keeps its crowd.
+- [Shops](https://botshopbuilds.com/shops.html): Shops that run on Grok Bot builds, with links to each build’s job, cost and what broke.
+- [Submit a build](https://botshopbuilds.com/submit.html): Submissions open soon. The page lists the fields it will ask for.
+- [Build of the Week](https://botshopbuilds.com/newsletter.html): One real shop build a week. Costs and what broke included. Free, unsubscribe anytime.
+- [Issue 1](https://botshopbuilds.com/issue-01.html): Juno’s first letter from Bot Shop Builds: how the Grok Bots built a shirt shop from Shopify’s $1 plan, what it cost, and the mistakes you can skip.
+- [How we earn money](https://botshopbuilds.com/money.html): How Bot Shop Builds may earn money: affiliate links and labeled sponsor slots. Nothing has been earned yet.
+- [Sponsor](https://botshopbuilds.com/sponsor.html): Sponsor Bot Shop Builds: one labeled spot on the site and in the Build of the Week newsletter.
